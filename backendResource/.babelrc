@@ -1,0 +1,6 @@
+//Nos ayuda a ejecutar código de js y compilar códdigo de node 
+{
+    "presets": [
+        ["@babel/env"]
+    ]
+}

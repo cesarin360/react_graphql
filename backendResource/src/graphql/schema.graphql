@@ -1,0 +1,19 @@
+#Se crea una consulta que nos ayuda a extraer los datos por medio
+#Del tipo de dato Libro
+type Query {
+    libros: [Libros!]
+}
+
+#iniciamos una mutación y le pasamos los parametros que se pueden mutar o editar 
+type Mutation {
+    createLibro(libro: String!, genero: String!, autor: String!, enlace: String!): Libros
+}
+
+#Se crea un tipo de dato y sus campos 
+type Libros {
+    _id: ID!
+    libro: String!
+    genero: String!
+    autor: String!
+    enlace: String!
+}
